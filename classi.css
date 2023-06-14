@@ -1,0 +1,27 @@
+.backr{
+    background-color: black;
+}
+.cilocor{
+    color: bisque;
+}
+.navbear{
+    background-color: DarkSlateGrey;
+}
+.heroalchim{
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png");
+}
+.hov:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+
+}
+.card-body{
+    display:none;
+    text-align: center;
+}
+.hov:hover .card-body {
+    display: block;
+}
+.b{
+    float: left;
+}
