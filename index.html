@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="classi.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body class="backr">
+    <div id="app" class="cilocor">
+        <button v-on:click="increase()">+</button>
+        <p>{{ number }}</p>
+        <button v-on:click="reser()">reset</button>
+        <button v-on:click="acc();">accept</button>
+    </div>
+    <div class="homepage_BackgroundVideoContainer_33v9_"><video autoplay preload="auto" loop="" playsinline=""><source type="video/webm" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm"><source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_02.mp4"></video></div>
+
+
+    </div>
+    <script>
+        alert('Сколько вам лет?')
+        let app = new Vue({
+            el: '#app',
+            data: {
+                languages: [],
+                number: 0,
+
+            },
+            methods: {
+                increase: function () {
+                    this.number++
+                },
+                reser: function () {
+                    this.number = 0
+                },
+                acc: function() {
+                    if(this.number >= 10) {
+                        window.location.href = 'saitONE.html';
+                    }
+                    else{
+                        alert('иди учи уроки')
+                    }
+                }
+            },
+        });
+
+    </script>
+</body>
+
+</html>
